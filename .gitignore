@@ -18,6 +18,8 @@ submission/
 cfg/
 darknet
 .fuse*
+libdarknet.a
+libdarknet.so
 weights/
 
 # OS Generated #
