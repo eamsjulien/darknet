@@ -1112,7 +1112,7 @@ float train_networks(network **nets, int n, data d, int interval)
         printf("Syncing... ");
         fflush(stdout);
         sync_nets(nets, n, interval);
-        printf("Done!\n");
+        // printf("Done!\n");
     }
     //cudaDeviceSynchronize();
     free(threads);
