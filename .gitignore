@@ -31,3 +31,4 @@ scripts/
 backup/
 *.a
 *.so
+datasets/
