@@ -1,6 +1,6 @@
 GPU=1
 CUDNN=1
-OPENCV=1
+OPENCV=0
 OPENMP=0
 DEBUG=0
 
@@ -21,7 +21,7 @@ OBJDIR=./obj/
 
 CC=gcc
 CPP=g++
-NVCC=nvcc 
+NVCC=nvcc
 AR=ar
 ARFLAGS=rcs
 OPTS=-Ofast
@@ -43,7 +43,7 @@ ifeq ($(OPENCV), 1)
 COMMON+= -DOPENCV
 CFLAGS+= -DOPENCV
 LDFLAGS+= `pkg-config --libs opencv` -lstdc++
-COMMON+= `pkg-config --cflags opencv` 
+COMMON+= `pkg-config --cflags opencv`
 endif
 
 ifeq ($(GPU), 1)
